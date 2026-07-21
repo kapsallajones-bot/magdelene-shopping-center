@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magdelen Shopping Center</title>
+    <meta name="description" content="A modern and responsive shopping experience with curated home essentials." />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header reveal">
+        <a class="brand" href="#hero">
+          <img src="assets/follow-square-circles.svg" alt="Store symbol" class="brand-mark" />
+          <div>
+            <p class="brand-kicker">Curated essentials for every home</p>
+            <h1>Magdelen Shopping Center</h1>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#hero">Home</a>
+          <a href="#products">Products</a>
+          <a href="#support">Support us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cart-pill">
+          <span>Cart</span>
+          <span id="cart-count">0</span>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="hero reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Comfort, design, and everyday luxury</p>
+            <h2>Bring beauty and practicality into your space.</h2>
+            <p>
+              Discover carefully selected kitchen tools, home accents, and timeless favorites designed to make daily life feel effortless.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#products">Buy</a>
+              <a class="btn btn-secondary" href="#support">Support us</a>
+            </div>
+            <ul class="hero-highlights">
+              <li>Fast delivery</li>
+              <li>Hand-picked products</li>
+              <li>Friendly support</li>
+            </ul>
+          </div>
+
+          <div class="hero-gallery">
+            <img src="assets/air-fryer.jpg" alt="Air fryer" />
+            <img src="assets/Kenmore-oven.jpg" alt="Oven" />
+            <img src="assets/plate.jpg" alt="Serving plate" />
+          </div>
+        </section>
+
+        <section id="products" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Featured picks | Top products</p>
+            <h3>Everyday favorites with a premium feel.</h3>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="assets/air-fryer.jpg" alt="Air fryer" />
+              <div class="product-info">
+                <h4>Air Fryer Glow</h4>
+                <p>Fast, crisp, and elegant for modern kitchens.</p>
+                <div class="product-footer">
+                  <span>50,000FCFA</span>
+                  <button class="add-to-bag" type="button">Buy</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="assets/Kenmore-oven.jpg" alt="Kenmore oven" />
+              <div class="product-info">
+                <h4>Kenmore Oven</h4>
+                <p>Reliable performance with polished design.</p>
+                <div class="product-footer">
+                  <span>50,000FCFA</span>
+                  <button class="add-to-bag" type="button">Buy</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="assets/plate.jpg" alt="Serving plate" />
+              <div class="product-info">
+                <h4>Ceramic Plate Set</h4>
+                <p>Elevated hosting essentials for stylish tables.</p>
+                <div class="product-footer">
+                  <span>20,000FCFA</span>
+                  <button class="add-to-bag" type="button">Buy</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="assets/slicing.jpg" alt="Slicing board" />
+              <div class="product-info">
+                <h4>kitchen set chopper</h4>
+                <p>Premium craftsmanship for everyday prep.</p>
+                <div class="product-footer">
+                  <span>8,000FCFA</span>
+                  <button class="add-to-bag" type="button">Buy</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="support" class="section support-section reveal">
+          <div class="support-card">
+            <img src="assets/cookie.svg" alt="Cookie icon" class="support-icon" />
+            <div>
+              <p class="eyebrow">Support us</p>
+              <h3>Help keep the shop growing.</h3>
+              <p>
+                Your support can helps us bring more beautiful products and better experiences to our shop and community of buyers.
+              </p>
+              <div class="support-progress">
+                <div class="support-bar">
+                  <span id="support-value">62%</span>
+                </div>
+              </div>
+              <button class="btn btn-primary support-btn" type="button">Support now</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Get in touch</p>
+            <h3>We are here for questions, orders, and support.</h3>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h4>Visit us</h4>
+              <p>Open daily from 8am to 8pm</p>
+              <p>Mbankolo, opposite la coccinell primary school</p>
+              <h4>Our Mails</h4>
+              <p>kapsallajones@gmail.com <br>magdaleneshoppingcenter15@gmail.com</p>
+            </div>
+
+            <form class="contact-card form-card" action="assets/php/contact.php" method="post">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Your email" required />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Send message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer reveal">
+        <p>© 2026 Magdelen Shopping Center <br>Since 2021 <br> Crafted with care.</p>
+      </footer>
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>
